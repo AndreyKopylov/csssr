@@ -1,0 +1,24 @@
+.radio-button
+      &:not(checked)
+        display none
+        position absolute
+        & + label
+          display block
+          float left
+          height 28px
+          width 28px
+          margin-left 21px
+          background url(../images/radio-background.png)
+          & + label
+            float left
+            margin-top 2px
+            margin-left 5px
+            sans-bold()
+            color brown-text
+      &:checked + label:before
+        display block
+        margin: 8px auto
+        height 12px
+        width 12px
+        content ""
+        background url(../images/radio-mark.png)

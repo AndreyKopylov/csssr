@@ -1,0 +1,135 @@
+doctype html
+head
+    link(href='assets/styles/common.css?' rel='stylesheet')
+    link(href='assets/styles/jquery-ui.css' rel='stylesheet')
+body
+    header.header
+        .header__logo
+        .alert-banner
+        .clearfix
+        .header__title
+            .header__title-img
+    section
+        .container
+            .profile
+                h3.profile__title Полное ФИО
+                p.profile__text Андрей Копылов Михалыч
+                .clearfix
+                h3.profile__title Год рождения
+                p.profile__text 1995
+                .clearfix
+                h3.profile__title Место жительства
+                p.profile__text г. Санкт-Петербург, Россия
+                .clearfix
+                h3.profile__title Скайп
+                p.profile__text volypok17
+                .clearfix
+                h3.profile__title Почта
+                p.profile__text andreykopylove@gmail.com
+                .clearfix
+            .education
+                h3.education__title Выпускник
+                a.education__link(href="javascript:void(0);") htmlacademy.ru
+                .education__radio
+                    input(type="radio" name="edu" class="radio-button" id="yes")
+                    label(for="yes")
+                    label(for="yes") Да
+                    input(type="radio" name="edu" class="radio-button" id="no" checked)
+                    label(for="no")
+                    label(for="no") Нет
+            .clearfix
+            .skills
+                    h3.skills__title Практические навыки
+                    p.skills__text Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутствие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+                    .skills__col
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox" checked)
+                            label(for="skills-checkbox")
+                            label(for="skills-checkbox") Методология БЭМ
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox1" checked)
+                            label(for="skills-checkbox1")
+                            label(for="skills-checkbox1") jQuery
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox2" checked)
+                            label(for="skills-checkbox2")
+                            label(for="skills-checkbox2") Использую GRUNT
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox3")
+                            label(for="skills-checkbox3")
+                            label(for="skills-checkbox3") HAML
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox4" checked)
+                            label(for="skills-checkbox4")
+                            label(for="skills-checkbox4") SASS
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox5")
+                            label(for="skills-checkbox5")
+                            label(for="skills-checkbox5") LESS
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox6")
+                            label(for="skills-checkbox6")
+                            label(for="skills-checkbox6") CoffeeScript
+                    .skills__col
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox7" checked)
+                            label(for="skills-checkbox7")
+                            label(for="skills-checkbox7") Jade
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox8" checked)
+                            label(for="skills-checkbox8")
+                            label(for="skills-checkbox8") Stylus
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox9")
+                            label(for="skills-checkbox9")
+                            label(for="skills-checkbox9") Знаю (изучаю) Angular
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox10")
+                            label(for="skills-checkbox10")
+                            label(for="skills-checkbox10") Верстка под Android
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox11")
+                            label(for="skills-checkbox11")
+                            label(for="skills-checkbox11") Верстка под iOS
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox12")
+                            label(for="skills-checkbox12")
+                            label(for="skills-checkbox12") Верстка под Windows Phone
+                    .skills__col.skills__col__last
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox13")
+                            label(for="skills-checkbox13")
+                            label(for="skills-checkbox13") Верстка рассылок
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox14" checked)
+                            label(for="skills-checkbox14")
+                            label(for="skills-checkbox14") Адаптивная верстка
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox15" checked)
+                            label(for="skills-checkbox15")
+                            label(for="skills-checkbox15") Использую Dropbox
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox16" checked)
+                            label(for="skills-checkbox16")
+                            label(for="skills-checkbox16") Использую Gmail
+                        .skills__row
+                            input(type="checkbox" class="checkbox" id="skills-checkbox17" checked)
+                            label(for="skills-checkbox17")
+                            label(for="skills-checkbox17") Использую GitHub
+            .clearfix
+            .slider
+                h3.slider__title Уровень владения JavaScript
+                #slider
+                .slider__borders
+                    .slider__borders__inner
+                h4.slider__text.slider__text__noob Не владею
+                h4.slider__text.slider__text__medium Использую готовые решения
+                h4.slider__text.slider__text__hard Использую готовые решения и умею их переделывать
+                h4.slider__text.slider__text__pro Пишу сложные скрипты
+            .clearfix
+            .date
+                h3.date__title Дата заполнения
+                p.date__number 30.10.2014
+    script(src="assets/scripts/libs/jquery-2.1.1.min.js")
+    script(src="assets/scripts/libs/jquery-ui.js")
+    script(src='assets/scripts/common.js')

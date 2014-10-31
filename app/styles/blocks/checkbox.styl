@@ -1,0 +1,32 @@
+.checkbox
+  &:not(checked)
+    position absolute
+    display none
+    & + label
+      position relative
+      display block
+      float left
+      height 18px
+      width 18px
+      margin-top 4px
+      margin-right 3px
+      background url(../images/checkbox-background.png)
+      & + label
+        float left
+        width 88%
+        margin-top 1px
+        margin-left 5px
+        font-size 21px
+        line-height 25px
+        sans-bold()
+        color brown-text
+  &:checked + label:before
+    position absolute
+    left 3px
+    bottom 3px
+    display block
+    margin: 0 auto
+    height 25px
+    width 20px
+    content ""
+    background url(../images/checkbox-mark.png)
